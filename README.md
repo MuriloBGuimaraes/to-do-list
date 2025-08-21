@@ -47,7 +47,5 @@ Todas as tarefas são salvas no navegador via localStorage.
 
 
 ## ▶️ Como executar o projeto
+- [**CLIQUE AQUI**](https://to-do-list-beryl-two-48.vercel.app/)
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/SEU-USUARIO/to-do-list.git
