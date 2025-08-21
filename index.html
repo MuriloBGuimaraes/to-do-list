@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+
+    <!-- Campo de inserção -->
+    <div class="task-input">
+      <input type="text" id="new-task" placeholder="Digite uma nova tarefa...">
+      <button id="add-task">Adicionar ➕</button>
+    </div>
+
+    <!-- Box da lista -->
+    <div class="task-box">
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+
+  <!-- Botão modo claro/escuro -->
+  <button id="toggle-theme" class="theme-btn">🌙</button>
+
+  <!-- Legenda fixa -->
+  <footer id="how-to">
+    <p><strong>Como usar:</strong>  
+      Adicione tarefas ➕ | Edite ✏️ | Exclua ❌ | Reordene ⬆️⬇️ 
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* Paleta de cores escolhida */
+:root {
+  --dark-bg: #57564f;
+  --dark-card: #7a7a73;
+  --dark-text: #f8f3ce;
+  --dark-accent: #dddad0;
+
+  --light-bg: #f8f3ce;
+  --light-card: #dddad0;
+  --light-text: #57564f;
+  --light-accent: #7a7a73;
+}
+
+/* Tema padrão (claro) */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light-card);
+  color: var(--light-text);
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+/* Tema escuro */
+body.dark {
+  background: var(--dark-bg);
+  color: var(--dark-bg);
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: var(--light-card);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+body.dark .container {
+  background: var(--dark-card);
+}
+
+/* Input */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--light-accent);
+}
+
+body.dark .task-input input {
+  border: 1px solid var(--dark-accent);
+  background: #444;
+  color: var(--dark-text);
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Lista de tarefas */
+.task-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-box li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light-bg);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+body.dark .task-box li {
+  background: var(--dark-accent);
+}
+
+.task-box li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Botão tema */
+.theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--light-card);
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+body.dark .theme-btn {
+  background: var(--dark-card);
+}
+
+/* Footer fixo */
+#how-to {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 12px;
+}
